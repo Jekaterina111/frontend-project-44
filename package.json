@@ -18,5 +18,8 @@
     "url": "https://github.com/Jekaterina111/frontend-project-44/issues"
   },
   "type": "module",
-  "homepage": "https://github.com/Jekaterina111/frontend-project-44#readme"
+  "homepage": "https://github.com/Jekaterina111/frontend-project-44#readme",
+  "dependencies": {
+    "node-modules": "^1.0.1"
+  }
 }
