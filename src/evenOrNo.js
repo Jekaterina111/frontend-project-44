@@ -1,18 +1,28 @@
 import readlineSync from 'readline-sync';
-import hello from '../src/cli.js';
 
+console.log('Welcome to the Brain Games!');
+let userName = readlineSync.question('May I have your name? ');
+console.log('Hello, ' + userName + '!');
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-export default (answer) => {
- let number = Math.floor(Math.random() * 10);
- const eventOrNo = (number) => (number % 2 === 0) ? "yes" : "no";
-  answer = readlineSync.question('Question:' + number);
-  let answer2 = answer.toLowerCase();
-  if (answer2 === eventOrNo(number)){
-    console.log('Your answer: ' + answer + '\nCorrect!'); 
-  } else {
-    console.log(`'$answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${hello()}!`)
-  }
+export default () => {
+
+let winPlus = 0;
+while (winPlus < 3) {
+  let number = Math.floor(Math.random() * 100);
   
-return answer;
- }
+  let answer = readlineSync.question('Question:' + number);
+  let answer2 = answer.toLowerCase();
+
+  if ((answer2 === 'yes' && number % 2 === 0) || (answer2 === 'no' && number % 2 !==0)){
+    console.log('Your answer: ' + answer + '\nCorrect!');
+     winPlus += 1;
+  } else {
+    console.log(`'${answer2}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
+    return
+  }
+} 
+console.log(`Congratulations, ${userName}!`);
+}
+
 
