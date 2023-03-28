@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import answerEventOrNo from '../src/evenOrNo.js';
+import answerEventOrNo from '../src/games/evenOrNo.js';
 
 answerEventOrNo();
