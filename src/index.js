@@ -9,9 +9,9 @@ export default (rules, rulesFunction) => {
   let winPlus = 0;
 while (winPlus < 3) {
   const[question, answer] = rulesFunction();
-  const yourAnswer = readlineSync.question('Question:' + question);
+  const yourAnswer = readlineSync.question('Question: ' + question);
   console.log('Your answer: ' + yourAnswer);
-    if (yourAnswer === answer){
+    if (yourAnswer == answer){
        console.log( 'Correct!');
        winPlus += 1;
     } else {
