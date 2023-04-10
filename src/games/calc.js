@@ -1,7 +1,7 @@
 import gameLogic from '../index.js';
 
 export default () => {
-    let rules = 'What is the result of the expression?';
+let rules = 'What is the result of the expression?';
     
 const rulesFunction = () => {
     let number = Math.floor(Math.random() * 100);
