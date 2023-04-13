@@ -2,4 +2,3 @@
 import calcGcd from '../src/games/gcd.js';
 
 calcGcd();
-

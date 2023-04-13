@@ -1,7 +1,7 @@
 import gameLogic from '../index.js';
 
 export default () => {
-    const rules = 'What number is missing in the progression?';
+const rules = 'What number is missing in the progression?';
 
   function getProgression(start) {
     const members = [];
@@ -11,7 +11,7 @@ export default () => {
     }
     return members;
   }
-  
+
   function rulesFunction() {
     const num = Math.floor(Math.random() * 10);
     const progression = getProgression(num);

@@ -22,4 +22,7 @@ rules:
     - js: always
   no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }],
   linebreak-style: ['error', 'unix'],
+  eslint eqeqeq: ["error", "always", {"null": "ignore"}],
+  skipBlankLines: true,
+  no-eval: ["error", {"allowIndirect": true}]
 

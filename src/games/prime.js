@@ -8,16 +8,16 @@ export default () => {
       return false;
     }
     for (let i = 2; i <= Math.sqrt(num); i += 1) {
-        if (num % i === 0) {
-            return false;
-          }
-      }
-      return true;
-    };      
+    if (num % i === 0) {
+    return false;
+  }
+  }
+  return true;
+};
   function rulesFunction() {
     const question = Math.floor(Math.random() * 100);
     const correctAnswer = isPrime(question) ? 'yes' : 'no';
     return [question, correctAnswer];
-  };
-gameLogic(rules, rulesFunction);  
+  }
+gameLogic(rules, rulesFunction);
 };
