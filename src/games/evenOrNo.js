@@ -11,7 +11,7 @@ let winPlus = 0;
 while (winPlus < 3) {
   let number = Math.floor(Math.random() * 100);
   
-  let answer = readlineSync.question('Question:' + number);
+  let answer = readlineSync.question('Question: ' + number);
   let answer2 = answer.toLowerCase();
 
   if ((answer2 === 'yes' && number % 2 === 0) || (answer2 === 'no' && number % 2 !==0)){
