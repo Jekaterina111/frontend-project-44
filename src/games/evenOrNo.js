@@ -14,10 +14,10 @@ export default () => {
     if ((answer2 === 'yes' && number % 2 === 0) || (answer2 === 'no' && number % 2 !== 0)) {
       console.log(`Your answer: ${answer}\nCorrect!`);
       winPlus += 1;
-      } else {
+  } else {
       console.log(`'${answer2}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
-        return;
-      }
-    }
-    console.log(`Congratulations, ${userName}!`);
+    return;
+  }
+}
+console.log(`Congratulations, ${userName}!`);
 };
