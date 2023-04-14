@@ -9,7 +9,7 @@ export default () => {
     const randomSimbol = simbols[randomIndex];
     const question = `${number} ${randomSimbol} ${number}`;
     const answer = eval(question);
-    return [question, answer];
+    return [question, answer.toString()];
   };
   gameLogic(rules, rulesFunction);
 };
