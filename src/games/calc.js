@@ -10,6 +10,6 @@ export default () => {
     const question = `${number} ${randomSimbol} ${number}`;
     const answer = eval(question);
     return [question, answer];
-};
+  };
   gameLogic(rules, rulesFunction);
 };
